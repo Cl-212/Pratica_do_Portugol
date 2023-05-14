@@ -3,17 +3,40 @@ programa
 	
 	funcao inicio()
 	{
-		escreva("Olá Mundo")
+		
+		inteiro vet[10]
+	     inteiro n
+	     inteiro soma = 0
+	
+	    // Loop para ler os 10 números e armazená-los no vetor
+	    para (inteiro i = 0; i <10;  i++){
+	        escreva("Digite o elemento ", i+1, " do vetor: ")
+	        leia(vet[i])
+	    }
+	    
+	    escreva("\nElementos nos índices ímpares do vetor: \n")
+    		para (inteiro i = 0; i < 10; i++ ) {
+       		se (vet[i] % 2 != 0){
+       			escreva(vet[i], " ")
+       			}
+    		}
+    		escreva("\nElementos pares do vetor: \n")
+	    	para (inteiro i = 0; i < 10; i++){
+	        se (vet[i] % 2 == 0) {
+	            escreva(vet[i], " ")
+	       	 }
+	        }
+
+		    para (inteiro i = 0; i < 10; i++){
+		        soma = soma + vet[i]
+		    }
+		    escreva("\nSoma de todos os elementos do vetor: \n", soma)
+
+			real media = soma / 10
+
+
+	    escreva("\nMédia de todos os elementos do vetor: \n", media)
+
+			
 	}
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 12; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
